@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InformaTori - Supporto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background-color: #fff;
+            padding: 24px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1d1d1f;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: #1d1d1f;
+        }
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            color: #1d1d1f;
+        }
+        p, li {
+            font-size: 15px;
+            color: #424245;
+            margin-bottom: 12px;
+        }
+        ul, ol {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        .app-name {
+            color: #0071e3;
+            font-weight: 600;
+        }
+        .subtitle {
+            font-size: 15px;
+            color: #86868b;
+            margin-bottom: 32px;
+        }
+        .separator {
+            border: none;
+            border-top: 1px solid #d2d2d7;
+            margin: 32px 0;
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-top: 16px;
+            margin-bottom: 4px;
+        }
+        .faq-answer {
+            margin-bottom: 20px;
+        }
+        .contact-box {
+            background-color: #f5f5f7;
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 16px;
+        }
+        .contact-box p {
+            margin-bottom: 8px;
+        }
+        .contact-box a {
+            color: #0071e3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 16px 0;
+        }
+        .feature-card {
+            background-color: #f5f5f7;
+            border-radius: 12px;
+            padding: 16px;
+        }
+        .feature-card .icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .feature-card h3 {
+            font-size: 15px;
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+        .feature-card p {
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+        @media (max-width: 600px) {
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+        }
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #d2d2d7;
+            font-size: 13px;
+            color: #86868b;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Supporto</h1>
+<p class="subtitle"><span class="app-name">InformaTori</span> &mdash; L'app per gli informatori medici</p>
+
+<h2>Panoramica dell'App</h2>
+<p><span class="app-name">InformaTori</span> è un'applicazione pensata per gli informatori medici scientifici, progettata per semplificare la gestione quotidiana dei contatti con i medici, degli appuntamenti e dell'auto aziendale.</p>
+
+<div class="feature-list">
+    <div class="feature-card">
+        <div class="icon">👨‍⚕️</div>
+        <h3>Gestione Medici</h3>
+        <p>Rubrica completa con nome, indirizzo validato su mappa e orari di ricevimento.</p>
+    </div>
+    <div class="feature-card">
+        <div class="icon">📅</div>
+        <h3>Agenda Appuntamenti</h3>
+        <p>Calendario visuale per pianificare le visite con i medici giorno per giorno.</p>
+    </div>
+    <div class="feature-card">
+        <div class="icon">🚗</div>
+        <h3>Auto Aziendale</h3>
+        <p>Registro dei km giornalieri e dei rifornimenti con spesa carburante.</p>
+    </div>
+    <div class="feature-card">
+        <div class="icon">💾</div>
+        <h3>Backup & Ripristino</h3>
+        <p>Backup automatico e manuale in formato JSON per non perdere mai i tuoi dati.</p>
+    </div>
+</div>
+
+<hr class="separator">
+
+<h2>Guida Rapida</h2>
+
+<h3>Aggiungere un medico</h3>
+<ol>
+    <li>Vai nella sezione <strong>Medici</strong></li>
+    <li>Tocca il pulsante <strong>+</strong> in alto a destra</li>
+    <li>Inserisci nome e cognome</li>
+    <li>Tocca <strong>Cerca indirizzo...</strong> per cercare e selezionare l'indirizzo dello studio</li>
+    <li>Aggiungi gli orari di ricevimento toccando <strong>Aggiungi Orario</strong></li>
+    <li>Tocca <strong>Salva</strong></li>
+</ol>
+
+<h3>Creare un appuntamento</h3>
+<ol>
+    <li>Vai nella sezione <strong>Agenda</strong></li>
+    <li>Seleziona la data dal calendario</li>
+    <li>Tocca il pulsante <strong>+</strong></li>
+    <li>Seleziona il medico, l'orario e aggiungi eventuali note</li>
+    <li>Tocca <strong>Salva</strong></li>
+</ol>
+
+<h3>Registrare i km dell'auto</h3>
+<ol>
+    <li>Vai nella sezione <strong>Auto</strong></li>
+    <li>Tocca <strong>+</strong> e seleziona <strong>Registra Km</strong></li>
+    <li>Inserisci i km attuali del contachilometri</li>
+    <li>Tocca <strong>Salva</strong></li>
+</ol>
+
+<h3>Registrare un rifornimento</h3>
+<ol>
+    <li>Vai nella sezione <strong>Auto</strong></li>
+    <li>Tocca <strong>+</strong> e seleziona <strong>Registra Rifornimento</strong></li>
+    <li>Inserisci i km, l'importo in euro e opzionalmente i litri</li>
+    <li>Tocca <strong>Salva</strong></li>
+</ol>
+
+<h3>Eseguire un backup manuale</h3>
+<ol>
+    <li>Vai nella sezione <strong>Profilo</strong></li>
+    <li>Tocca <strong>Backup &amp; Ripristino</strong></li>
+    <li>Tocca <strong>Esporta Backup</strong> per salvare un file JSON</li>
+    <li>Scegli dove salvare il file (iCloud Drive, File, AirDrop, email...)</li>
+</ol>
+
+<hr class="separator">
+
+<h2>Domande Frequenti (FAQ)</h2>
+
+<p class="faq-question">I miei dati vengono inviati a qualche server?</p>
+<p class="faq-answer">No. Tutti i dati restano esclusivamente sul tuo dispositivo. L'unica comunicazione di rete avviene quando cerchi un indirizzo, poiché la ricerca utilizza il servizio MapKit di Apple.</p>
+
+<p class="faq-question">Cosa succede se disinstallo l'app?</p>
+<p class="faq-answer">Tutti i dati vengono eliminati dal dispositivo. Ti consigliamo di eseguire un backup manuale prima di disinstallare l'app, così potrai ripristinare i dati dopo la reinstallazione.</p>
+
+<p class="faq-question">Come funziona il backup automatico?</p>
+<p class="faq-answer">Ogni volta che esci dall'app o passi ad un'altra applicazione, viene salvato automaticamente un file di backup sul dispositivo. Puoi ripristinare dall'ultimo backup automatico dalla sezione Backup &amp; Ripristino nel Profilo.</p>
+
+<p class="faq-question">Posso trasferire i dati su un nuovo dispositivo?</p>
+<p class="faq-answer">Sì. Esporta un backup dal vecchio dispositivo (via AirDrop, email o cloud), poi sul nuovo dispositivo usa "Importa Backup" dalla sezione Backup &amp; Ripristino.</p>
+
+<p class="faq-question">Quale versione di iOS è necessaria?</p>
+<p class="faq-answer">InformaTori richiede iOS 17.0 o successivo.</p>
+
+<p class="faq-question">L'app funziona su iPad?</p>
+<p class="faq-answer">Sì, InformaTori è compatibile sia con iPhone che con iPad.</p>
+
+<hr class="separator">
+
+<h2>Contattaci</h2>
+<p>Per segnalare un problema, suggerire una funzionalità o per qualsiasi altra domanda, non esitare a contattarci.</p>
+
+<div class="contact-box">
+    <p><strong>Email di supporto:</strong></p>
+    <p><a href="mailto:informatori.app@gmail.com">informatori.app@gmail.com</a></p>
+    <p><strong>Tempo di risposta:</strong> entro 48 ore lavorative</p>
+</div>
+
+<footer>
+    <p>&copy; 2026 InformaTori. Tutti i diritti riservati.</p>
+    <p style="margin-top: 8px;"><a href="privacy-policy.html" style="color: #0071e3; text-decoration: none;">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
